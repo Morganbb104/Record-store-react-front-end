@@ -15,11 +15,6 @@ function Records() {
             .then(result => setRecords(result))
             .catch(console.log);
         }, []);
-        function addClick() {
-            const now = new Date();
-            setScopedRecord({id:0, artist: "", album: "", year: now.getFullYear()});
-            setShowForm(true);
-        }
 
     function addClick() {
         const now = new Date();
